@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+ 
+    
 </head>
 <body>
     <h1>
         Este es el taller de eventos
     </h1>
-   <button onclick="mifunction()">Saludar</button>
+    <div id="Container" style="padding: 5px; background-color: rgb(52, 212, 148);">
+   <button onclick="alert('Hola'); event.stopPropagation();">Saludar</button>
+</div>
+    
+   <script src="eventos.js"></script>
+    
 
-<script>
-    function mifunction(){
-        alert("Hola!")
-    }
-</script>
 </body>
 </html>
